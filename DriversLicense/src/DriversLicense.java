@@ -30,7 +30,7 @@ public class DriversLicense {
 		LocalDate today = LocalDate.now();
 		// calculate the time difference between the referencing drivers license's date of birth and today
 		Period period = Period.between(this.dob, today);
-		// get the differnece in years, being the age, and return it
+		// get the difference in years, being the age, and return it
 		int age = period.getYears();
 		return age;
 	}

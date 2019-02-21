@@ -62,6 +62,7 @@ public class TicTacToe {
 			
 		}
 		System.out.println(toPrint);
+		
 	}
 	
 	private static boolean checkWin() {
@@ -92,60 +93,9 @@ public class TicTacToe {
 				}
 			}
 		}
+		if (staleMate) {
+			return true;
+		}
 		return false;
 	}
 }
-//public static class MyList {
-//String[] store = new String[10];
-//int size = 0;
-//// adds string to the list
-//public void add (String s) {
-//	if (s == null) {
-//		return;
-//	}
-//	if (size < store.length) {
-//		store[size + 1] = s;
-//	} else {
-//	// make a new array one bigger than the old array
-//	String[] resize = new String[size*2];
-//	// add the values from the old array into the new one
-//	for (int i = 0; i < resize.length - 1; i++) {
-//		resize[i] = store[i];
-//	}
-//	// make the last element the new string we are adding
-//	resize[size + 1] = s;
-//	// point store to the new array in memory
-//	store = resize;
-//	}
-//	size++;
-//}
-//
-//// returns the size of the list
-//public int size() {
-//	return size;
-//}
-//
-//// gets an element of the list
-//public String get(int p ) {
-//	if (0 < p < size -1) {
-//		return null;
-//	}
-//	return store[p];
-//}
-//
-//// removes an element from the list
-//public void remove (int i) {
-//	// make a new array with size one less
-//	String[] buff = new String[size - 1];
-//	if (0 <= i && i < size) {
-//		// walk through the array and copy, skipping over the index to remove
-//		for (int q = 0; q < size; q++) {
-//			if (q != i) {
-//				buff[q] = store[q];
-//			}
-//		}
-//	}
-//	// reassign the array
-//	store = buff;
-//	size--;
-//}

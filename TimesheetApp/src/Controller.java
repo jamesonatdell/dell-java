@@ -197,29 +197,25 @@ System.out.println("                      `         (/  (/\\");
             return;
         }
         boolean aFlag = false;
-        boolean projFlag = false;
-        int aIndex = -1;
         int projIndex = -1;
         
+        // handle length 2
         if (actionParts.length > 1 && actionParts.length < 3) {
         	if (actionParts[1].equals("-a")) {
-        		aFlag = true;	
-        		aIndex = 1;
+        		aFlag = true;
         	} else {
-        		projFlag = true;
         		projIndex = 1;
         	}
         	
         }
         
+        // handle length 3
         if (actionParts.length == 3) {
         	if (actionParts[2].equals("-a")) {
-        		aIndex = 2;
         		projIndex = 1;
         		aFlag = true;
         	}
         	else {
-        		aIndex = 1;
         		projIndex= 2;
         		aFlag =true;
         	}
