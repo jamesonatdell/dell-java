@@ -1,0 +1,5 @@
+// String color String licenseNumber, String make, String model
+Red, 123ABC, Mercedes-Benz, SL500
+Silver, DRMABC, Lamberati, Utah
+Orange, GARAGEE, Maserghini, SouthDakota
+Blue, PHOOEY, NewLamborghiniHere, HollywoodHills
